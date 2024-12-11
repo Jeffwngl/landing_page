@@ -64,7 +64,7 @@ a {
     font-size: 48px;
 }
 
-.content .text {
+.upper .content .text {
     padding-bottom: 20px;
     width: 500px;
 }
@@ -78,8 +78,41 @@ button.Sign-up {
     border: 1px #3882f6;
 }
 
-.container.middle1 {
+.middle1 {
+    padding: 0 20px 60px;
+    text-align: center;
+    color: #1F2937;
+}
+
+.middle1 .content {
     display: flex;
+    gap: 50px;
     justify-content: center;
-    padding: 20px;
+}
+
+.middle1 .title {
+    font-size: 36px;
+}
+
+.image{
+    width: 150px;
+    height: 150px;
+    background-color: #E5E7EB;
+    border: 2px solid #c5c5c5;
+    border-radius: 10px;
+}
+
+.image-section {
+    max-width: 150px;
+}
+
+.content .image-section .text {
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+.middle2 {
+    background-color: #E5E7EB;
+    display: flex;
+    padding: 100px
 }
