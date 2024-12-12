@@ -21,7 +21,7 @@
             <div class="text">This website has some subtext that goes under here.</div>
             <button class="Sign-up">Sign Up</button>
         </div>
-        <img src="https://images.unsplash.com/photo-1733176094176-2d82d79e5acd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="400px" alt="photo of beach">
+        <img src="https://images.unsplash.com/photo-1732058824460-d89cb7b4a38f?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="400px" alt="photo of beach">
     </div>
 
     <div class="container middle1">
@@ -47,8 +47,10 @@
     </div>
 
     <div class="container middle2">
-        <div class="text">This is some random quote.</div>
-        <div class="Author">P. Diddy</div>
+        <div class="content">
+            <blockquote id="quote">This is some random quote.</blockquote>
+            <div id="author">P. Diddy</div>
+        </div>
     </div>
 
     <div class="container lower">
@@ -64,5 +66,23 @@
     <div class="footer">
         <div class="text">Copyright</div>
     </div>
+<script>
+    const quote = document.getElementById("quote");
+    const author = document.getElementById("author");
+    const api_url = "https://api.kanye.rest/";
+
+    async function getquote(url) {
+        const response = await fetch(url);
+        var data = await response.json();
+        console.log(data);
+
+        quote.innerHTML = data.quote + ".";
+        author.innerHTML = "- Kanye West";
+    }
+
+    getquote(api_url);
+
+</script>
+
 </body>
 </html>

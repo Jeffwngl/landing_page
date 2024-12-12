@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 body {
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
@@ -43,11 +45,15 @@ a {
     font-size: 16px;
 }
 
+img {
+    border-radius: 10px;
+}
+
 .container.upper {
     display: flex;
     justify-content: space-between;
     background-color: #1F2937;
-    padding: 50px 150px;
+    padding: 50px 150px 74px;
     color: white;
     align-items: center;
     flex: 1;
@@ -114,5 +120,23 @@ button.Sign-up {
 .middle2 {
     background-color: #E5E7EB;
     display: flex;
-    padding: 100px
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
 }
+
+.middle2 .content {
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px 0 #9e9e9e;
+}
+
+.middle2 blockquote {
+    font-size: 36px;
+    columns: #1f2937;
+    text-align: center;
+    font-family: "Playfair Display", sans-serif;
+    position: relative;
+}
+
